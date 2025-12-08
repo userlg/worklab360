@@ -2,7 +2,7 @@
 
     {{-- HERO --}}
     <section
-        class="pt-20 pb-16 bg-gradient-to-r from-indigo-700 to-purple-500 text-white rounded-xl shadow-lg mx-4 md:mx-10 mt-6">
+        class="pt-20 pb-16 bg-gradient-to-r from-indigo-800 to-purple-600 text-indigo rounded-xl shadow-lg mx-4 md:mx-10 mt-6">
         <div class="max-w-6xl mx-auto px-6 text-center">
 
             <h1 class="text-4xl md:text-5xl font-bold drop-shadow-md">

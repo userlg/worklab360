@@ -2,7 +2,7 @@
 
     {{-- HERO SECTION --}}
     <section
-        class="pt-20 pb-16 bg-gradient-to-r from-indigo-700 to-purple-500 text-white rounded-xl shadow-lg mx-4 md:mx-10 mt-6">
+        class="pt-20 pb-16 bg-gradient-to-r from-indigo-800 to-purple-600 text-indigo-50 rounded-xl shadow-lg mx-4 md:mx-10 mt-6">
         <div class="max-w-6xl mx-auto text-center px-6">
 
             <h1 class="text-4xl md:text-5xl font-bold tracking-tight drop-shadow-md">
@@ -14,7 +14,7 @@
                 optimizar procesos y ofrecer alineadores de alta precisión.
             </p>
 
-            <a href="{{ route('Services')  }}"
+            <a href="{{ route('Services') }}"
                 class="inline-block mt-8 px-8 py-3 text-lg font-semibold bg-white text-indigo-700 
           border border-indigo-200 rounded-lg shadow-md hover:bg-indigo-50 transition">
                 Ver Servicios
