@@ -1,7 +1,7 @@
 <x-layouts.app :title="'Servicios'">
 
     {{-- HERO SECTION --}}
-    <section class="bg-gradient-to-r from-indigo-600 to-purple-600 text-white py-20">
+    <section class="bg-gradient-to-r from-indigo-700 to-purple-500 text-white py-20">
         <div class="max-w-7xl mx-auto px-6 text-center">
             <h1 class="text-4xl md:text-5xl font-extrabold mb-4">
                 Servicios Profesionales para tu Clínica o Laboratorio Dental

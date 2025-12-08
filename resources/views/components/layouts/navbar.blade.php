@@ -9,9 +9,9 @@
         {{-- MENU DESKTOP --}}
         <div class="hidden md:flex space-x-6 text-sm font-medium">
             <a href="{{ route('Welcome') }}" class="hover:text-purple-300 transition ease-in duration-300">Inicio</a>
-            <a href="#" class="hover:text-purple-300 transition ease-in duration-300">Servicios</a>
-            <a href="#" class="hover:text-purple-300 transition ease-in duration-300">Nosotros</a>
-            <a href="#" class="hover:text-purple-300 transition ease-in duration-300">Contacto</a>
+            <a href="{{ route('Services') }}" class="hover:text-purple-300 transition ease-in duration-300">Servicios</a>
+            <a href="{{ route('About') }}" class="hover:text-purple-300 transition ease-in duration-300">Nosotros</a>
+            <a href="{{ route('Contact') }}" class="hover:text-purple-300 transition ease-in duration-300">Contacto</a>
         </div>
 
         {{-- BOTÓN HAMBURGUESA --}}
@@ -33,7 +33,7 @@
         <ul class="divide-y divide-indigo-700/40">
             {{-- ITEM --}}
             <li class="group">
-                <a href="#"
+                <a href="{{ route('Welcome') }}"
                     class="block py-3 pl-3 transition-all duration-200 group-hover:text-purple-200
                        relative">
                     Inicio
@@ -46,7 +46,7 @@
             </li>
 
             <li class="group">
-                <a href="#"
+                <a href="{{ route('Services') }}"
                     class="block py-3 pl-3 transition-all duration-200 group-hover:text-purple-200
                        relative">
                     Servicios
@@ -57,7 +57,7 @@
             </li>
 
             <li class="group">
-                <a href="#"
+                <a href="{{ route('About') }}"
                     class="block py-3 pl-3 transition-all duration-200 group-hover:text-purple-200
                        relative">
                     Nosotros
@@ -68,7 +68,7 @@
             </li>
 
             <li class="group">
-                <a href="#"
+                <a href="{{ route('Contact') }}"
                     class="block py-3 pl-3 transition-all duration-200 group-hover:text-purple-200
                        relative">
                     Contacto
