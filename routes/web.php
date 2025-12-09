@@ -12,4 +12,8 @@ Route::controller(PageController::class)->group(function () {
     Route::get('about', 'about')->name('About');
 
     Route::get('contact', 'contact')->name('Contact');
+
+    Route::get('terms', 'terms')->name('Terms');
+
+    Route::get('privacy', 'privacy')->name('Privacy');
 });
