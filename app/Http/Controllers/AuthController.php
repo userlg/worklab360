@@ -2,9 +2,12 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+use Illuminate\Contracts\View\View;
 
 class AuthController extends Controller
 {
-    //
+    public function dashboard(): View
+    {
+        return view('auth.dashboard');
+    }
 }

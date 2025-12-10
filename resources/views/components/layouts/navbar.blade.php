@@ -8,10 +8,16 @@
 
         {{-- MENU DESKTOP --}}
         <div class="hidden md:flex space-x-6 text-sm font-medium">
-            <a href="{{ route('Welcome') }}" class="hover:text-purple-300 transition ease-in duration-300">Inicio</a>
-            <a href="{{ route('Services') }}" class="hover:text-purple-300 transition ease-in duration-300">Servicios</a>
-            <a href="{{ route('About') }}" class="hover:text-purple-300 transition ease-in duration-300">Nosotros</a>
-            <a href="{{ route('Contact') }}" class="hover:text-purple-300 transition ease-in duration-300">Contacto</a>
+            @guest
+
+                <a href="{{ route('Welcome') }}" class="hover:text-purple-300 transition ease-in duration-300">Inicio</a>
+                <a href="{{ route('Services') }}" class="hover:text-purple-300 transition ease-in duration-300">Servicios</a>
+                <a href="{{ route('About') }}" class="hover:text-purple-300 transition ease-in duration-300">Nosotros</a>
+                <a href="{{ route('Contact') }}" class="hover:text-purple-300 transition ease-in duration-300">Contacto</a>
+                <a href="{{ route('login') }}" class="hover:text-purple-300 transition ease-in duration-300">Acceder</a>
+            @else
+                <x-logout-link>Salir</x-logout-link>
+            @endguest
         </div>
 
         {{-- BOTÓN HAMBURGUESA --}}
