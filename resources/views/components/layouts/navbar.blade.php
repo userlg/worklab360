@@ -7,19 +7,16 @@
         </a>
 
         {{-- MENU DESKTOP --}}
+        @guest
         <div class="hidden md:flex space-x-6 text-sm font-medium">
-            @guest
 
                 <a href="{{ route('Welcome') }}" class="hover:text-purple-300 transition ease-in duration-300">Inicio</a>
                 <a href="{{ route('Services') }}" class="hover:text-purple-300 transition ease-in duration-300">Servicios</a>
                 <a href="{{ route('About') }}" class="hover:text-purple-300 transition ease-in duration-300">Nosotros</a>
                 <a href="{{ route('Contact') }}" class="hover:text-purple-300 transition ease-in duration-300">Contacto</a>
                 <a href="{{ route('login') }}" class="hover:text-purple-300 transition ease-in duration-300">Acceder</a>
-            @else
-                <x-logout-link>Salir</x-logout-link>
-            @endguest
         </div>
-
+            
         {{-- BOTÓN HAMBURGUESA --}}
         <button id="nav-toggle" class="md:hidden focus:outline-none">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -85,6 +82,8 @@
             </li>
 
         </ul>
+
+        @endguest
     </div>
 
 </nav>

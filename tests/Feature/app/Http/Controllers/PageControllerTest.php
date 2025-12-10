@@ -42,4 +42,21 @@ class PageControllerTest extends TestCase
 
         $response->assertStatus(200);
     }
+
+    public function test_terms_page_loads_successfully(): void
+    {
+        $this->withoutMiddleware();
+
+        $response = $this->get('terms');
+
+        $response->assertStatus(200);
+    }
+
+    public function test_privacy_page_loads_successfully(): void
+    {
+        $this->withoutMiddleware();
+
+        $response = $this->get('privacy');
+        $response->assertStatus(200);
+    }
 }

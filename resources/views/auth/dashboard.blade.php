@@ -5,7 +5,7 @@
         <x-dashboard.aside />
 
         {{-- CONTENIDO PRINCIPAL --}}
-        <main class="flex-1 p-6">
+        <div class="py-2 px-6">
 
             {{-- TÍTULO --}}
             <h1 class="text-3xl font-bold text-indigo-700">
@@ -83,7 +83,7 @@
                 </ul>
             </section>
 
-        </main>
+        </div>
 
     </div>
 
