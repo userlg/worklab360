@@ -1,25 +1,34 @@
-<div class="absolute z-[200] w-full">
-    <div>
-        {{-- Session Messages --}}
-        @if (session('status'))
-            <div id="session" role="alert"
-                class="text-sm font-semibold text-green-900 dark:text-green-100 
-        bg-green-100 dark:bg-green-800/80 
-        border border-green-300 dark:border-green-600 
-        w-full max-w-3xl mx-auto mt-4 p-4 
-        rounded-xl shadow-md dark:shadow-green-600/30 
-        transition-all duration-300 ease-in-out">
+@if (session('status') || session('resent'))
+    <div x-data="{ show: true }" x-init="setTimeout(() => show = true, 50)" x-show="show" x-transition.opacity.duration.400ms
+        x-transition.scale.origin.top.duration.400ms class="fixed top-6 inset-x-0 z-[200] flex justify-center px-4">
 
-                <p class="text-center">
-                    @if (session('status') === 'verification-link-sent')
-                        {{ __('A new email verification link has been emailed to you!') }}
-                    @elseif(session('resent'))
-                        {{ __('Un nuevo email de verificación ha sido enviado.') }}
-                    @else
-                        {{ session('status') }}
-                    @endif
-                </p>
+        <div
+            class="
+            max-w-md w-full
+            bg-white dark:bg-gray-900
+            border border-indigo-200 dark:border-indigo-700/40
+            shadow-xl dark:shadow-indigo-900/40
+            rounded-xl p-4 flex items-center gap-3
+        ">
+            {{-- Icono --}}
+            <div class="text-indigo-600 dark:text-indigo-300 text-2xl">
+                @if (session('status') === 'verification-link-sent' || session('resent'))
+                    ✉️
+                @else
+                    ✅
+                @endif
             </div>
-        @endif
+
+            {{-- Mensaje --}}
+            <p class="text-gray-700 dark:text-gray-100 font-medium text-sm">
+                @if (session('status') === 'verification-link-sent')
+                    {{ __('A new email verification link has been emailed to you!') }}
+                @elseif(session('resent'))
+                    {{ __('Un nuevo email de verificación ha sido enviado.') }}
+                @else
+                    {{ session('status') }}
+                @endif
+            </p>
+        </div>
     </div>
-</div>
+@endif

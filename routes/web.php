@@ -22,4 +22,8 @@ Route::controller(PageController::class)->group(function () {
 Route::middleware(['auth'])->controller(AuthController::class)->group(function () {
 
     Route::get('dashboard', 'dashboard')->name('Dashboard');
+
+    Route::post('/register', 'register')
+        ->middleware(['guest'])
+        ->name('register');
 });
