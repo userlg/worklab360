@@ -7,9 +7,9 @@
 
         @guest
             <div class="flex gap-4">
-                <a href="{{ route('Terms') }}" class="hover:text-gray-200 transition">Términos</a>
-                <a href="{{ route('Privacy') }}" class="hover:text-gray-200 transition">Privacidad</a>
-                <a href="{{ route('Contact') }}" class="hover:text-gray-200 transition">Contacto</a>
+                <a href="{{ route('terms') }}" class="hover:text-gray-200 transition">Términos</a>
+                <a href="{{ route('privacy') }}" class="hover:text-gray-200 transition">Privacidad</a>
+                <a href="{{ route('contact') }}" class="hover:text-gray-200 transition">Contacto</a>
             </div>
         @endguest
 

@@ -125,7 +125,7 @@
             derechos.
         </p>
 
-        <a href="{{ route('Contact') }}"
+        <a href="{{ route('contact') }}"
             class="inline-block mt-6 px-10 py-3 text-lg font-semibold rounded-lg bg-indigo-700 text-white shadow-md hover:bg-indigo-800 transition">
             Contáctanos
         </a>

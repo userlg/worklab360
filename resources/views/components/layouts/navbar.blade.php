@@ -2,7 +2,7 @@
     <div class="max-w-7xl mx-auto px-6 py-3 flex justify-between items-center">
 
         {{-- LOGO --}}
-        <a href="{{ route('Welcome') }}" class="text-xl font-semibold tracking-wide hover:text-purple-200 transition">
+        <a href="{{ route('welcome') }}" class="text-xl font-semibold tracking-wide hover:text-purple-200 transition">
             WorkLab360
         </a>
 
@@ -10,10 +10,10 @@
         @guest
         <div class="hidden md:flex space-x-6 text-sm font-medium">
 
-                <a href="{{ route('Welcome') }}" class="hover:text-purple-300 transition ease-in duration-300">Inicio</a>
-                <a href="{{ route('Services') }}" class="hover:text-purple-300 transition ease-in duration-300">Servicios</a>
-                <a href="{{ route('About') }}" class="hover:text-purple-300 transition ease-in duration-300">Nosotros</a>
-                <a href="{{ route('Contact') }}" class="hover:text-purple-300 transition ease-in duration-300">Contacto</a>
+                <a href="{{ route('welcome') }}" class="hover:text-purple-300 transition ease-in duration-300">Inicio</a>
+                <a href="{{ route('services') }}" class="hover:text-purple-300 transition ease-in duration-300">Servicios</a>
+                <a href="{{ route('about') }}" class="hover:text-purple-300 transition ease-in duration-300">Nosotros</a>
+                <a href="{{ route('contact') }}" class="hover:text-purple-300 transition ease-in duration-300">Contacto</a>
                 <a href="{{ route('login') }}" class="hover:text-purple-300 transition ease-in duration-300">Acceder</a>
         </div>
             
@@ -36,7 +36,7 @@
         <ul class="divide-y divide-indigo-700/40">
             {{-- ITEM --}}
             <li class="group">
-                <a href="{{ route('Welcome') }}"
+                <a href="{{ route('welcome') }}"
                     class="block py-3 pl-3 transition-all duration-200 group-hover:text-purple-200
                        relative">
                     Inicio
@@ -49,7 +49,7 @@
             </li>
 
             <li class="group">
-                <a href="{{ route('Services') }}"
+                <a href="{{ route('services') }}"
                     class="block py-3 pl-3 transition-all duration-200 group-hover:text-purple-200
                        relative">
                     Servicios
@@ -60,7 +60,7 @@
             </li>
 
             <li class="group">
-                <a href="{{ route('About') }}"
+                <a href="{{ route('about') }}"
                     class="block py-3 pl-3 transition-all duration-200 group-hover:text-purple-200
                        relative">
                     Nosotros
@@ -71,7 +71,7 @@
             </li>
 
             <li class="group">
-                <a href="{{ route('Contact') }}"
+                <a href="{{ route('contact') }}"
                     class="block py-3 pl-3 transition-all duration-200 group-hover:text-purple-200
                        relative">
                     Contacto

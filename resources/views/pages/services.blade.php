@@ -60,7 +60,7 @@
                 En WorkLab360 te ayudamos a adoptar la odontología digital de forma eficiente y profesional.
             </p>
 
-            <a href="{{ route('Contact') }}"
+            <a href="{{ route('contact') }}"
                 class="inline-block bg-white text-indigo-700 font-semibold px-6 py-3 rounded-xl shadow-md
                       hover:bg-gray-100 hover:shadow-xl transition-all duration-300">
                 Contáctanos Hoy

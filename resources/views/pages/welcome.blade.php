@@ -14,7 +14,7 @@
                 optimizar procesos y ofrecer alineadores de alta precisión.
             </p>
 
-            <a href="{{ route('Services') }}"
+            <a href="{{ route('services') }}"
                 class="inline-block mt-8 px-8 py-3 text-lg font-semibold bg-white text-indigo-700 
           border border-indigo-200 rounded-lg shadow-md hover:bg-indigo-50 transition">
                 Ver Servicios
@@ -86,7 +86,7 @@
             Da el siguiente paso hacia la odontología moderna y ofrece servicios de calidad superior a tus pacientes.
         </p>
 
-        <a href="{{ route('Contact') }}"
+        <a href="{{ route('contact') }}"
             class="inline-block mt-6 px-10 py-3 text-lg font-semibold rounded-lg bg-indigo-700 text-white shadow-md hover:bg-indigo-800 transition">
             Contáctanos
         </a>
