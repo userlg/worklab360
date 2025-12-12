@@ -13,7 +13,7 @@
         </div>
     </section>
 
-    {{-- FEATURES / SERVICES GRID --}}
+    {{-- SERVICES GRID --}}
     <section class="py-16 bg-gray-50">
         <div class="max-w-7xl mx-auto px-6">
             <h2 class="text-3xl font-bold text-gray-800 text-center mb-12">
@@ -22,94 +22,33 @@
 
             <div class="grid md:grid-cols-3 gap-10">
 
-                {{-- SERVICE 1 --}}
-                <div class="bg-white rounded-2xl shadow-lg p-8 hover:shadow-2xl transition duration-300 group">
-                    <div
-                        class="w-16 h-16 bg-indigo-600 text-white flex items-center justify-center rounded-full mb-6
-                                group-hover:bg-purple-600 transition">
-                        🦷
-                    </div>
-                    <h3 class="text-xl font-semibold mb-3 text-gray-800">Escaneo y Digitalización 3D</h3>
-                    <p class="text-gray-600">
-                        Digitalizamos modelos dentales con escáneres de alta precisión, obteniendo archivos STL listos
-                        para planificación o impresión 3D.
-                    </p>
-                </div>
+                <x-ui.service-card icon="🦷" title="Escaneo y Digitalización 3D"
+                    text="Digitalizamos modelos dentales con escáneres de alta precisión,
+                          obteniendo archivos STL listos para planificación o impresión 3D." />
 
-                {{-- SERVICE 2 --}}
-                <div class="bg-white rounded-2xl shadow-lg p-8 hover:shadow-2xl transition duration-300 group">
-                    <div
-                        class="w-16 h-16 bg-indigo-600 text-white flex items-center justify-center rounded-full mb-6
-                                group-hover:bg-purple-600 transition">
-                        🧪
-                    </div>
-                    <h3 class="text-xl font-semibold mb-3 text-gray-800">Planificación Digital de Alineadores</h3>
-                    <p class="text-gray-600">
-                        Realizamos setups digitales, movimientos dentales progresivos y
-                        diseño completo de series de alineadores para tu tratamiento.
-                    </p>
-                </div>
+                <x-ui.service-card icon="🧪" title="Planificación Digital de Alineadores"
+                    text="Realizamos setups digitales, movimientos dentales progresivos
+                          y diseño completo de series de alineadores para tu tratamiento." />
 
-                {{-- SERVICE 3 --}}
-                <div class="bg-white rounded-2xl shadow-lg p-8 hover:shadow-2xl transition duration-300 group">
-                    <div
-                        class="w-16 h-16 bg-indigo-600 text-white flex items-center justify-center rounded-full mb-6
-                                group-hover:bg-purple-600 transition">
-                        🖨️
-                    </div>
-                    <h3 class="text-xl font-semibold mb-3 text-gray-800">Impresión 3D para Modelos Dentales</h3>
-                    <p class="text-gray-600">
-                        Impresiones 3D de alta precisión para modelos de trabajo, alineadores, retenedores
-                        y prototipos dentales.
-                    </p>
-                </div>
+                <x-ui.service-card icon="🖨️" title="Impresión 3D para Modelos Dentales"
+                    text="Impresiones 3D de alta precisión para modelos de trabajo,
+                          alineadores, retenedores y prototipos dentales." />
 
-                {{-- SERVICE 4 --}}
-                <div class="bg-white rounded-2xl shadow-lg p-8 hover:shadow-2xl transition duration-300 group">
-                    <div
-                        class="w-16 h-16 bg-indigo-600 text-white flex items-center justify-center rounded-full mb-6
-                                group-hover:bg-purple-600 transition">
-                        🛠️
-                    </div>
-                    <h3 class="text-xl font-semibold mb-3 text-gray-800">Fabricación de Alineadores</h3>
-                    <p class="text-gray-600">
-                        Producción profesional de alineadores transparentes con materiales certificados,
-                        entregando resultados clínicos estéticos y confiables.
-                    </p>
-                </div>
+                <x-ui.service-card icon="🛠️" title="Fabricación de Alineadores"
+                    text="Producción profesional de alineadores transparentes utilizando
+                          materiales certificados para resultados confiables." />
 
-                {{-- SERVICE 5 --}}
-                <div class="bg-white rounded-2xl shadow-lg p-8 hover:shadow-2xl transition duration-300 group">
-                    <div
-                        class="w-16 h-16 bg-indigo-600 text-white flex items-center justify-center rounded-full mb-6
-                                group-hover:bg-purple-600 transition">
-                        📈
-                    </div>
-                    <h3 class="text-xl font-semibold mb-3 text-gray-800">Optimización de Flujos Digitales</h3>
-                    <p class="text-gray-600">
-                        Implementamos sistemas CAD/CAM, protocolos digitales y automatización
-                        para mejorar tu eficiencia y reducir tiempos operativos.
-                    </p>
-                </div>
+                <x-ui.service-card icon="📈" title="Optimización de Flujos Digitales"
+                    text="Implementamos sistemas CAD/CAM y protocolos digitales para mejorar
+                          la eficiencia de tu práctica y reducir tiempos operativos." />
 
-                {{-- SERVICE 6 --}}
-                <div class="bg-white rounded-2xl shadow-lg p-8 hover:shadow-2xl transition duration-300 group">
-                    <div
-                        class="w-16 h-16 bg-indigo-600 text-white flex items-center justify-center rounded-full mb-6
-                                group-hover:bg-purple-600 transition">
-                        🎓
-                    </div>
-                    <h3 class="text-xl font-semibold mb-3 text-gray-800">Capacitación y Acompañamiento</h3>
-                    <p class="text-gray-600">
-                        Formación personalizada para clínicas y laboratorios en escaneo 3D,
-                        software de alineadores y manejo de flujos digitales.
-                    </p>
-                </div>
+                <x-ui.service-card icon="🎓" title="Capacitación y Acompañamiento"
+                    text="Formación personalizada para clínicas y laboratorios en escaneo 3D,
+                          software de alineadores y manejo de flujos digitales." />
 
             </div>
         </div>
     </section>
-
 
     {{-- CALL TO ACTION --}}
     <section class="py-16 bg-gradient-to-r from-indigo-600 to-purple-600 text-white">

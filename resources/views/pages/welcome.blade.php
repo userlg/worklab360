@@ -30,49 +30,23 @@
         <div class="grid md:grid-cols-4 gap-8"> {{-- 4 columnas ahora para incluir la tarjeta de registro --}}
 
             {{-- CARD 1 --}}
-            <div
-                class="bg-white shadow-lg rounded-xl p-6 border border-indigo-100 hover:shadow-xl hover:-translate-y-1 transition">
-                <div class="text-purple-600 text-4xl mb-4">🦷</div>
-                <h3 class="text-xl font-semibold text-gray-800">Digitalización de Modelos</h3>
-                <p class="mt-2 text-gray-600">
-                    Obtén modelos 3D precisos listos para planificación, impresión o creación de alineadores.
-                </p>
-            </div>
+            <x-ui.welcome-card icon="🦷" title="Digitalización de Modelos"
+                text="Obtén modelos 3D precisos listos para planificación, impresión o creación de alineadores." />
 
             {{-- CARD 2 --}}
-            <div
-                class="bg-white shadow-lg rounded-xl p-6 border border-indigo-100 hover:shadow-xl hover:-translate-y-1 transition">
-                <div class="text-indigo-600 text-4xl mb-4">🧬</div>
-                <h3 class="text-xl font-semibold text-gray-800">Setups y Planificación de Alineadores</h3>
-                <p class="mt-2 text-gray-600">
-                    Diseño digital completo del tratamiento: movimientos progresivos, etapas y optimización clínica.
-                </p>
-            </div>
+            <x-ui.welcome-card icon="🧬" title="Setups y Planificación de Alineadores"
+                text="Diseño digital completo del tratamiento: movimientos progresivos, etapas y optimización clínica." />
 
             {{-- CARD 3 --}}
-            <div
-                class="bg-white shadow-lg rounded-xl p-6 border border-indigo-100 hover:shadow-xl hover:-translate-y-1 transition">
-                <div class="text-indigo-600 text-4xl mb-4">🖨️</div>
-                <h3 class="text-xl font-semibold text-gray-800">Impresión 3D Profesional</h3>
-                <p class="mt-2 text-gray-600">
-                    Modelos dentales listos para termoformado, pruebas, planificación o uso clínico.
-                </p>
-            </div>
+            <x-ui.welcome-card icon="🖨️" title="Impresión 3D Profesional"
+                text="Modelos dentales listos para termoformado, pruebas, planificación o uso clínico." />
+
 
             {{-- CARD 4: Registro --}}
-            <div
-                class="bg-white shadow-lg rounded-xl p-6 border border-indigo-100 hover:shadow-xl hover:-translate-y-1 transition text-center">
-                <div class="text-green-600 text-4xl mb-4">📝</div>
-                <h3 class="text-xl font-semibold text-gray-800">Crea tu Cuenta</h3>
-                <p class="mt-2 text-gray-600">
-                    Regístrate en WorkLab360 y empieza a digitalizar tu flujo clínico o de laboratorio de forma rápida y
-                    segura.
-                </p>
-                <a href="{{ route('register') }}"
-                    class="inline-block mt-4 px-6 py-2 text-sm font-semibold rounded-lg bg-indigo-700 text-white shadow-md hover:bg-indigo-800 transition">
-                    Registrarse
-                </a>
-            </div>
+            <x-ui.welcome-card icon="📝" title="Crea tu Cuenta"
+                text="Regístrate en WorkLab360 y empieza a digitalizar tu flujo clínico o de laboratorio de forma rápida y
+                    segura."
+                center="true" link="{{ route('register') }}" button="Registrarse" />
 
         </div>
     </section>
@@ -86,48 +60,21 @@
         <div class="grid md:grid-cols-4 gap-8"> {{-- 4 columnas, agregamos registro como CTA destacado --}}
 
             {{-- CARD 1 --}}
-            <div
-                class="bg-white shadow-lg rounded-xl p-6 border border-indigo-100 hover:shadow-xl hover:-translate-y-1 transition">
-                <div class="text-indigo-600 text-4xl mb-4">👓</div>
-                <h3 class="text-xl font-semibold text-gray-800">Fabricación de Alineadores</h3>
-                <p class="mt-2 text-gray-600">
-                    Alineadores transparentes con materiales certificados, precisión y estética superior.
-                </p>
-            </div>
+            <x-ui.welcome-card icon="👓" title="Fabricación de Alineadores"
+                text="Alineadores transparentes con materiales certificados, precisión y estética superior." />
 
             {{-- CARD 2 --}}
-            <div
-                class="bg-white shadow-lg rounded-xl p-6 border border-indigo-100 hover:shadow-xl hover:-translate-y-1 transition">
-                <div class="text-indigo-600 text-4xl mb-4">🔄</div>
-                <h3 class="text-xl font-semibold text-gray-800">Gestión de Flujos Digitales</h3>
-                <p class="mt-2 text-gray-600">
-                    Optimización del proceso interno: desde el escaneo hasta la entrega del alineador final.
-                </p>
-            </div>
+            <x-ui.welcome-card icon="🔄" title="Gestión de Flujos Digitales"
+                text="Optimización del proceso interno: desde el escaneo hasta la entrega del alineador final." />
 
             {{-- CARD 3 --}}
-            <div
-                class="bg-white shadow-lg rounded-xl p-6 border border-indigo-100 hover:shadow-xl hover:-translate-y-1 transition">
-                <div class="text-indigo-600 text-4xl mb-4">🎓</div>
-                <h3 class="text-xl font-semibold text-gray-800">Capacitación para Clínicas y Laboratorios</h3>
-                <p class="mt-2 text-gray-600">
-                    Aprende a integrar tecnologías CAD/CAM, impresión 3D y software de alineadores.
-                </p>
-            </div>
+            <x-ui.welcome-card icon="🎓" title="Capacitación para Clínicas y Laboratorios"
+                text="Aprende a integrar tecnologías CAD/CAM, impresión 3D y software de alineadores." />
 
             {{-- CARD 4: CTA Registro --}}
-            <div
-                class="bg-white shadow-lg rounded-xl p-6 border border-indigo-100 hover:shadow-xl hover:-translate-y-1 transition text-center">
-                <div class="text-green-600 text-4xl mb-4">📝</div>
-                <h3 class="text-xl font-semibold text-gray-800">Únete a WorkLab360</h3>
-                <p class="mt-2 text-gray-600">
-                    Crea tu cuenta hoy mismo y empieza a optimizar tu flujo digital clínico o de laboratorio.
-                </p>
-                <a href="{{ route('register') }}"
-                    class="inline-block mt-4 px-6 py-2 text-sm font-semibold rounded-lg bg-indigo-700 text-white shadow-md hover:bg-indigo-800 transition">
-                    Registrarse
-                </a>
-            </div>
+            <x-ui.welcome-card icon="📝" title="Únete a WorkLab360"
+                text="Crea tu cuenta hoy mismo y empieza a optimizar tu flujo digital clínico o de laboratorio."
+                center="true" link="{{ route('register') }}" button="Registrarse" />
 
         </div>
     </section>
