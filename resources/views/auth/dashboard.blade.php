@@ -1,25 +1,27 @@
 <x-layouts.app title="Dashboard">
 
-    <div class="flex bg-gray-100">
+    <div class="flex bg-gray-100 h-full">
 
+        {{-- SIDEBAR --}}
         <x-dashboard.aside />
 
         {{-- CONTENIDO PRINCIPAL --}}
-        <div class="py-2 px-6">
+        <div class="flex-1 py-6 px-6 md:px-10">
 
-            {{-- TÍTULO --}}
-            <h1 class="text-3xl font-bold text-indigo-700">
-                Bienvenido nuevamente, {{ auth()->user()->name }} 👋
-            </h1>
-
-            <p class="text-gray-600 mt-1">
-                Aquí tienes un resumen general de tus actividades.
-            </p>
+            {{-- HEADER --}}
+            <div class="mb-10">
+                <h1 class="text-3xl font-bold text-indigo-700">
+                    Bienvenido nuevamente, {{ auth()->user()->name }} 👋
+                </h1>
+                <p class="text-gray-600 mt-1">
+                    Aquí tienes un resumen general de tus actividades.
+                </p>
+            </div>
 
             {{-- TARJETAS DE ESTADÍSTICAS --}}
-            <div class="grid md:grid-cols-3 gap-6 mt-10">
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
 
-                {{-- CARD 1 --}}
+                {{-- CARD --}}
                 <div
                     class="bg-white rounded-xl shadow-lg border border-indigo-100 p-6 hover:shadow-xl transition hover:-translate-y-1">
                     <div class="text-indigo-600 text-4xl mb-3">🦷</div>
@@ -28,7 +30,7 @@
                     <p class="text-3xl font-bold text-indigo-700 mt-3">12</p>
                 </div>
 
-                {{-- CARD 2 --}}
+                {{-- CARD --}}
                 <div
                     class="bg-white rounded-xl shadow-lg border border-indigo-100 p-6 hover:shadow-xl transition hover:-translate-y-1">
                     <div class="text-purple-600 text-4xl mb-3">📈</div>
@@ -37,7 +39,7 @@
                     <p class="text-3xl font-bold text-purple-700 mt-3">5</p>
                 </div>
 
-                {{-- CARD 3 --}}
+                {{-- CARD --}}
                 <div
                     class="bg-white rounded-xl shadow-lg border border-indigo-100 p-6 hover:shadow-xl transition hover:-translate-y-1">
                     <div class="text-green-600 text-4xl mb-3">🧬</div>
@@ -47,11 +49,13 @@
                 </div>
             </div>
 
-            {{-- SECCIÓN ADICIONAL --}}
+            {{-- ACTIVIDAD RECIENTE --}}
             <section class="mt-14 bg-white rounded-xl shadow-lg p-8 border border-indigo-100">
+
                 <h2 class="text-2xl font-bold text-indigo-700">
                     Actividad Reciente
                 </h2>
+
                 <p class="text-gray-600 mt-2 mb-6">
                     Últimas acciones registradas en tu cuenta.
                 </p>
@@ -60,7 +64,9 @@
                     <li class="flex items-start gap-3">
                         <span class="text-indigo-600 text-2xl">📥</span>
                         <div>
-                            <p class="font-semibold text-gray-800">Se subió un nuevo modelo 3D (STL)</p>
+                            <p class="font-semibold text-gray-800">
+                                Se subió un nuevo modelo 3D (STL)
+                            </p>
                             <p class="text-gray-500 text-sm">Hace 2 horas</p>
                         </div>
                     </li>
@@ -68,7 +74,9 @@
                     <li class="flex items-start gap-3">
                         <span class="text-purple-600 text-2xl">🧾</span>
                         <div>
-                            <p class="font-semibold text-gray-800">Nuevo caso clínico agregado</p>
+                            <p class="font-semibold text-gray-800">
+                                Nuevo caso clínico agregado
+                            </p>
                             <p class="text-gray-500 text-sm">Hace 5 horas</p>
                         </div>
                     </li>
@@ -76,15 +84,17 @@
                     <li class="flex items-start gap-3">
                         <span class="text-green-600 text-2xl">🧬</span>
                         <div>
-                            <p class="font-semibold text-gray-800">Setup revisado y aprobado</p>
+                            <p class="font-semibold text-gray-800">
+                                Setup revisado y aprobado
+                            </p>
                             <p class="text-gray-500 text-sm">Ayer</p>
                         </div>
                     </li>
                 </ul>
+
             </section>
 
         </div>
-
     </div>
 
 </x-layouts.app>

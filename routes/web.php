@@ -26,4 +26,6 @@ Route::middleware(['auth'])->controller(AuthController::class)->group(function (
     Route::post('/register', 'register')
         ->middleware(['guest'])
         ->name('register');
+
+    Route::view('video_converter', 'videos.convert')->name('video_converter');
 });

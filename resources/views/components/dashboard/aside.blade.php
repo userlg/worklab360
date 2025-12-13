@@ -25,7 +25,7 @@
         </div>
 
         <nav class="mt-6 space-y-1 px-4">
-            <a href="#"
+            <a href="{{ route('dashboard') }}"
                 class="flex items-center gap-3 px-4 py-2 rounded-lg text-indigo-700 bg-indigo-100 font-semibold">
                 📊 Dashboard
             </a>
@@ -43,6 +43,11 @@
             <a href="#"
                 class="flex items-center gap-3 px-4 py-2 rounded-lg text-gray-700 hover:bg-gray-100 transition">
                 🏥 Laboratorio / Clínica
+            </a>
+
+            <a href="{{ route('video_converter') }}"
+                class="flex items-center gap-3 px-4 py-2 rounded-lg text-gray-700 hover:bg-gray-100 transition">
+                🎞️ Convertidor AVI
             </a>
 
             <a href="#"
