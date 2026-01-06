@@ -57,12 +57,19 @@ class FortifyServiceProvider extends ServiceProvider
 
         Fortify::redirects('login', '/dashboard');
 
+        // Rate limiting for login attempts
         RateLimiter::for('login', function (Request $request) {
             $throttleKey = Str::transliterate(Str::lower($request->input(Fortify::username())).'|'.$request->ip());
 
             return Limit::perMinute(5)->by($throttleKey);
         });
 
+        // Rate limiting for registration attempts
+        RateLimiter::for('register', function (Request $request) {
+            return Limit::perMinute(3)->by($request->ip());
+        });
+
+        // Rate limiting for two-factor authentication
         RateLimiter::for('two-factor', function (Request $request) {
             return Limit::perMinute(5)->by($request->session()->get('login.id'));
         });
