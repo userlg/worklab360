@@ -100,7 +100,13 @@
             <div class="rounded-xl overflow-hidden shadow-lg border border-indigo-100">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3934.075613968218!2d-84.09171348557444!3d9.928069876315785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0e33e9658c1f1%3A0x7f65c0e2d7e8d8be!2sSan%20Jos%C3%A9%2C%20Costa%20Rica!5e0!3m2!1ses-419!2scr!4v1700000000000"
-                    width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+                    width="100%" 
+                    height="300" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="Ubicación de WorkLab360">
                 </iframe>
             </div>
 

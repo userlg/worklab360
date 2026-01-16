@@ -1,12 +1,14 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Http\Controllers;
 
 use Illuminate\Contracts\View\View;
 
 /**
  * PageController
- * 
+ *
  * Handles public-facing page routes that are accessible to guests.
  */
 class PageController extends Controller

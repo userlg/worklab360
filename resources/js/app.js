@@ -5,8 +5,3 @@
  */
 
 import "../css/app.css";
-
-// Alpine.js can be enabled here if needed
-// import Alpine from 'alpinejs';
-// window.Alpine = Alpine;
-// Alpine.start();
